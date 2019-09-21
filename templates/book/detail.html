@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>详细页</title></head>
+<body>
+<h1>{{ book.title }}</h1>
+<ul>
+    {% for hero in book.hero_set.all %}
+
+    <li>{{ hero.name }}---{{ hero.sex }}----{{ hero.content }}</li>
+    {% endfor %}
+
+</ul>
+</body>
+</html>
